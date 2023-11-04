@@ -3,7 +3,6 @@
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "http://example.com/example.json",
     "type": "object",
-    "default": {},
     "title": "Create Books Schema",
     "required": [
       "isbn",
@@ -15,6 +14,7 @@
       "title",
       "year"
     ],
+    "additionalProperties": false,
     "properties": {
       "isbn": {
         "type": "string",
@@ -76,8 +76,8 @@
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "http://example.com/example.json",
     "type": "object",
-    "default": {},
     "title": "Update Books Schema",
+    "additionalProperties": false,
     "properties": {
       "isbn": {
         "type": "string",
